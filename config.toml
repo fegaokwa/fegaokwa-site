@@ -1,0 +1,192 @@
+baseURL = "https://www.example.org/"
+languageCode = "en-us"
+theme = "aafu"
+
+[params]
+    title = "Fega Okwa"
+    author = "Fega Okwa"
+    description = "Fega Okwa Personal Website"
+    copyright = "Fega Okwa 2019"
+
+    [params.theme]
+        allowToggle = true
+        mainTheme = "light"
+        altTheme = "dark"
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Fega Okwa"
+		    tagline = "Applied Mathematician"
+		    location = "Boston, USA"
+		    photocaption = "Picture of Fega Okwa"
+        photo = "Fega.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-linkedin-in"
+            url = "https://www.linkedin.com/in/fegaokwa/"
+            title = "LinkedIn"		
+       # [[params.social.list]]
+        #    class = "fab"
+         #   icon = "fa-stack-overflow"
+          #  url = "#"
+           # title = "StackOverflow"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/fegaokwa"
+            title = "GitHub"
+  #      [[params.social.list]]
+   #         class = "fab"
+    #        icon = "fa-file-pdf-o"
+     #       url = ""
+      #      title = "Resume"
+	#	[[params.social.list]]
+   #         class = "ai"
+    #        icon = "ai-google-scholar"
+     #       url = "#"
+      #      title = "Google Scholar"
+		#[[params.social.list]]
+     #       class = "ai"
+      #      icon = "ai-researchgate"
+       #     url = "#"
+        #    title = "ResearchGate"
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "publication"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+
+    [params.aboutme]
+        title = "About Me"
+        icon = "fas fa-user"
+        description = "My name is Fega Okwa, I am an Applied Mathematics student at Wentworth Institute of Technology in Boston, Massachusetts USA. I am interested in the fields of Data Science and Quantitative Finance. In the fall of 2017, I cofounded the Wentworth Finane & Investment Club as means to bring together student and faculty on campus passionate and knowledgeable of financial markets. I am proficient in R programming, having taking several classes that used the language. In the summer of 2019, I began learning Python and have worked with Matplotlib, Numpy, Pandas. I am familiar with MATLAB and Excel VBA. If you are interested in colaborating or any questions about previous experience, kindly reach out to me at my email: fega.okwa@gmail.com"
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+
+        [[params.experience.list]]
+            position = "Technical- Writer Intern"
+            company = "AIR Worldwide"
+            dates = "May 2018 - August 2018"
+            details = "Researched loss estimates from Hurricanes and the insurance cover needed by residents of Florida. Developed technical manuals that explained how proprietary risk analysis software worked.   Used ArcGIS to map catastrophes in Europe, America and Southeast Asia State. "
+        [[params.experience.list]]
+            position = "Enterprise Demand Management Intern"
+            dates = "June 2017 - August 2017"
+            company = "State Street Corporation"
+            details = "Designed and built fully functioning database to retrieve business case files over a 7-year period. Analyzed over 50GB of IT business case files aggregating and archiving important information. Researched and recommended a database management system to meet the needs of the IT team. "
+
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+        #[[params.education.list]]
+         #   degree = "Ph.D. in Subject"
+          #  college = "University of State-City"
+           # dates = "2013 - 2018"
+            #thesis_title = "Effect of humans on other humans: a study of human behavior."
+            #thesis_link = "#"
+       # [[params.education.list]]
+        #    degree = "M.S. in Subject"
+         #   college = "University of State-City"
+          #  dates = "2013 - 2018"
+           # thesis_title = "Effect of humans on other humans: a study of human behavior."
+            #thesis_link = "#"
+        [[params.education.list]]
+            degree = "B.S. in Applied Mathematics"
+            college = "Wentworth Institute of Technology"
+            dates = "2015 - 2019"
+            courses = "Partial Differential Equations, Time Series Analysis, Operations Research, Linear Algebra, Numerical Analysis"
+            clubs = "Wentworth Finance & Investment Club, Math Club, Society for Industrial and Applied Mathematics (SIAM)"
+            resume = "My Resume"
+
+    # Publication section
+    #[params.publication]
+      #  title = "Publications"
+       # icon = "fas fa-book"
+        #The order below determines the order in which the items appear in "Publications" section
+        #format = ["date", "authors", "title", "journal"]
+        #If you don't want to group publications, comment the line below by adding # at the beginning
+        #types = ["Journal Articles", "Proceedings"]
+
+       # [[params.publication.list]]
+        #    title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+         #   authors = "F Last, F Second, P secondary"
+          #  date = "2018"
+           # journal = "Journal of Field 52 (16), 9033-9044"
+            #link = "#"
+            #type = "Journal Articles"
+
+
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "Senior Capstone: Pricing of Variance Swaps in Energy Markets"
+            url = "#"
+            description = "In this project I focused on how volatile energy markets are and how investors can invest by using variance swaps which are forward contracts on realized variance, the square of the future volatility.I used the Hull-white and Heston Model to measure the realized variance and used the WTI oil price as my dataset."
+        [[params.project.list]]
+            title = "Operations Research: Mean Variance Optimization"
+            url = "#"
+            description = "In this project, using ideas learned in this class, the goal was to build a portfolio of assets which were not corrolated as a means to hedge against risk in case of a market downturn and also to optimize profits."
+         
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "R Programming"
+            skillrating = 70
+        [[params.skill.list]]
+            skill = "Python Programming"
+            skillrating = 50
+        [[params.skill.list]]
+            skill = "MATLAB, Java, SQL, Excel VBA"
+            skillrating = 40
+
+    # Hobby section
+    [params.hobby]
+       # title = "Hobbies"
+        # icon = "fas fa-gamepad"
+		
+        #[[params.hobby.list]]		
+		    #hobby = "Cooking"
+        #[[params.hobby.list]]		
+		    #hobby = "Hiking"
+        #[[params.hobby.list]]		
+		    #hobby = "Baking"
