@@ -1,12 +1,23 @@
-<h1 class="mb-0">{{ .Site.Params.profile.name }}</h1>
-<h2 class="mb-0">{{ .Site.Params.profile.tagline }}</h2>
-<h3 class="mb-0">{{ .Site.Params.profile.location }}</h3>
+<h2 class="mb-0">{{ .Site.Params.profile.name }}</h3>
+<h5 class="mb-0">{{ .Site.Params.profile.tagline }}</h5>
+<h5 class="mb-0">{{ .Site.Params.profile.location }}</h5>
+{{ if .Site.Params.profile.links.show_links }}
+<hr />
+{{ range .Site.Params.profile.links.list }}
+<!--{{ if .link_enabled }}-->
+<span class="small"><a href="{{ .Site.Params.profile.links.link }}"><b>{{ .link_text }}</b></a></span><br />
+<!--{{ end }}-->
+{{ end }}
+<hr />
+{{ end }}
 <div class="mt-2 d-flex flex-wrap justify-content-center">
   {{ range.Site.Params.social.list }}
-  <div style="height:45px; width:45px;">
-    <a href="{{ .url }}">
-      <i class="zoomlink mt-1 {{ .class }} {{ .icon }}"></i>
-    </a>
-  </div>
+  <span style="padding-left: 5px; padding-right: 5px">
+    <div style="height:30px; width:30px">
+      <a href="{{ .url }}">
+	<i class="zoomlink mt-1 {{ .class }} {{ .icon }}"></i>
+      </a>
+    </div>
+  </span>
   {{ end }}
 </div>

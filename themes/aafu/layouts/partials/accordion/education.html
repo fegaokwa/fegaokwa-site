@@ -1,16 +1,10 @@
 {{ range .Site.Params.education.list }}
 <dl>
-  <dt>{{ .degree }}</dt>
-  <dd class="mb-0 ml-3">{{ .dates }} &middot; {{ .college }}</dd>
-  <dd class="mb-0 ml-3" ><b>Relevant Coursework:</b> {{ .courses }}</dd>
-  <dd class="mb-0 ml-3" ><b>Clubs:</b> {{ .clubs }}</dd>
-  {{ if .thesis_link }}
-  <dd class="mb-0 ml-4">
-    Resume:
-    <a href="https://github.com/fegaokwa/fegaokwa.github.io/blob/master/FEGA%20OKWA%20RESUME%2019.pdf"
-      ><i>"My Resume"</i></a
-    >
-  </dd>
-  {{ end }}
+  <dt><b>{{ .degree }}</b></dt>
+  <dd class="mb-0 ml-3"><span class="small">{{ .college }} &middot; {{ .dates }}</span></dd>
+  <dd class="mb-0 ml-3"><span class="lead">Relevant Coursework:</span> {{ .courses }}</dd>
+  <dd class="mb-0 ml-3"><span class="lead">Clubs:</span> {{ .clubs }}</dd>p
 </dl>
 {{ end }}
+
+<!--Modified by Chris Carrigan Brolly, Aug 12, 2019-->

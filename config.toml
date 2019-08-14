@@ -1,4 +1,4 @@
-baseURL = "https://www.example.org/"
+baseURL = "https://fegaokwa.github.io/"
 languageCode = "en-us"
 theme = "aafu"
 
@@ -9,28 +9,41 @@ theme = "aafu"
     copyright = "Fega Okwa 2019"
 
     [params.theme]
-        allowToggle = true
+        allowToggle = false
         mainTheme = "light"
         altTheme = "dark"
 
     [params.favicons]
         use = true
-        metas = '''
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
-        <link rel="shortcut icon" href="favicon.ico">
+        metas = '''	
+        <!--link rel="shortcut icon" href="images/icons/resume16x16.ico"-->
+	<link rel="icon" sizes="32x32" href="images/icons/resume32x32.ico">
+        <!--link rel="icon" sizes="16x16" href="images/icons/resume16x16.ico">
+	<link rel="icon" sizes="48x48" href="images/icons/resume48x48.ico">
+	<link rel="icon" sizes="64x64" href="images/icons/resume64x64.ico"-->
+	<!--link rel="apple-touch-icon" sizes="180x180" href="img/icons/resume_apple_touch_logo.png"-->
+	<!--link rel="manifest" href="site.webmanifest"-->
         '''
 
     # Profile section
     [params.profile]
         name = "Fega Okwa"
-		    tagline = "Applied Mathematician"
-		    location = "Boston, USA"
-		    photocaption = "Picture of Fega Okwa"
-        photo = "Fega.jpg"
+        tagline = "Applied Mathematician"
+        location = "Boston, USA"
+        photocaption = "Picture of Fega Okwa"
+        photo = "images/fega-okwa.jpg"
+        [params.profile.links]
+            show_links=true
+
+            [[params.profile.links.list]]
+                link_enabled=true
+                link_text="Resume"
+                link = "files/fega-okwa-resume-19.pdf" # all items in static are copied to the website root directly
+            # [[params.profile.links.list]]
+            #     link_enabled=true
+            #   link_text="Testing second link"
+            #   link = "http://www.duckduckgo.com"
+            
 
     # Section for links to social websites
     [params.social]
@@ -40,7 +53,7 @@ theme = "aafu"
             class = "fab"
             icon = "fa-linkedin-in"
             url = "https://www.linkedin.com/in/fegaokwa/"
-            title = "LinkedIn"		
+            title = "LinkedIn"          
        # [[params.social.list]]
         #    class = "fab"
          #   icon = "fa-stack-overflow"
@@ -56,12 +69,12 @@ theme = "aafu"
     #        icon = "fa-file-pdf-o"
      #       url = ""
       #      title = "Resume"
-	#	[[params.social.list]]
+        #       [[params.social.list]]
    #         class = "ai"
     #        icon = "ai-google-scholar"
      #       url = "#"
       #      title = "Google Scholar"
-		#[[params.social.list]]
+                #[[params.social.list]]
      #       class = "ai"
       #      icon = "ai-researchgate"
        #     url = "#"
@@ -76,18 +89,14 @@ theme = "aafu"
     [[params.showInAccordion]]
         item = "education"
     [[params.showInAccordion]]
-        item = "publication"
-    [[params.showInAccordion]]
         item = "project"
     [[params.showInAccordion]]
         item = "skill"
-    [[params.showInAccordion]]
-        item = "hobby"
-
+        
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "My name is Fega Okwa, I am an Applied Mathematics student at Wentworth Institute of Technology in Boston, Massachusetts USA. I am interested in the fields of Data Science and Quantitative Finance. In the fall of 2017, I cofounded the Wentworth Finane & Investment Club as means to bring together student and faculty on campus passionate and knowledgeable of financial markets. I am proficient in R programming, having taking several classes that used the language. In the summer of 2019, I began learning Python and have worked with Matplotlib, Numpy, Pandas. I am familiar with MATLAB and Excel VBA. If you are interested in colaborating or any questions about previous experience, kindly reach out to me at my email: fega.okwa@gmail.com"
+        description = "My name is Fega Okwa, I am an Applied Mathematics student at Wentworth Institute of Technology in Boston, Massachusetts USA. I am interested in the fields of Data Science and Quantitative Finance. In the fall of 2017, I cofounded the Wentworth Finane & Investment Club as means to bring together student and faculty on campus passionate and knowledgeable of financial markets. I am proficient in R programming, having taking several classes that used the language. In the summer of 2019, I began learning Python and have worked with Matplotlib, Numpy, Pandas. I am familiar with MATLAB and Excel VBA. If you are interested in colaborating or any questions about previous experience, kindly reach out to me at my email:"
 
     # Experience section
     [params.experience]
@@ -128,7 +137,7 @@ theme = "aafu"
             dates = "2015 - 2019"
             courses = "Partial Differential Equations, Time Series Analysis, Operations Research, Linear Algebra, Numerical Analysis"
             clubs = "Wentworth Finance & Investment Club, Math Club, Society for Industrial and Applied Mathematics (SIAM)"
-            resume = "My Resume"
+            
 
     # Publication section
     #[params.publication]
@@ -180,13 +189,13 @@ theme = "aafu"
             skillrating = 40
 
     # Hobby section
-    [params.hobby]
+    # [params.hobby]            
        # title = "Hobbies"
         # icon = "fas fa-gamepad"
-		
-        #[[params.hobby.list]]		
-		    #hobby = "Cooking"
-        #[[params.hobby.list]]		
-		    #hobby = "Hiking"
-        #[[params.hobby.list]]		
-		    #hobby = "Baking"
+                
+        #[[params.hobby.list]]          
+                    #hobby = "Cooking"
+        #[[params.hobby.list]]          
+                    #hobby = "Hiking"
+        #[[params.hobby.list]]          
+                    #hobby = "Baking"
