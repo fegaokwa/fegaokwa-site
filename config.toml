@@ -31,7 +31,7 @@ theme = "aafu"
         tagline = "Applied Mathematician"
         location = "Boston, USA"
         photocaption = "Picture of Fega Okwa"
-        photo = "images/fega-okwa.jpg"
+        photo = "fega-okwa.jpg"
         [params.profile.links]
             show_links=true
 
