@@ -9,9 +9,9 @@ theme = "aafu"
     copyright = "Fega Okwa 2019"
 
     [params.theme]
-        allowToggle = false
-        mainTheme = "light"
-        altTheme = "dark"
+        allowToggle = true
+        mainTheme = "dark"
+        altTheme = "light"
 
     [params.favicons]
         use = true
