@@ -96,7 +96,7 @@ theme = "aafu"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "My name is Fega Okwa, I am an Applied Mathematics student at Wentworth Institute of Technology in Boston, Massachusetts USA. I am interested in the fields of Data Science and Quantitative Finance. In the fall of 2017, I cofounded the Wentworth Finane & Investment Club as means to bring together student and faculty on campus passionate and knowledgeable of financial markets. I am proficient in R programming, having taking several classes that used the language. In the summer of 2019, I began learning Python and have worked with Matplotlib, Numpy, Pandas. I am familiar with MATLAB and Excel VBA. If you are interested in collaborating or any questions about previous experience, kindly reach out to me at my email:"
+        description = "My name is Fega Okwa, I am an Applied Mathematics student at Wentworth Institute of Technology in Boston, Massachusetts USA. I am interested in the fields of Data Science and Quantitative Finance. In the fall of 2017, I cofounded the Wentworth Finane & Investment Club as means to bring together student and faculty on campus passionate and knowledgeable of financial markets. I am proficient in R programming, having taking several classes that used the language. In the summer of 2019, I began learning Python and have worked with Matplotlib, Numpy, Pandas. I am familiar with MATLAB and Excel VBA. If you are interested in collaborating or any questions about previous experience, kindly reach out to me at my email: fega.okwa@gmail.com"
 
     # Experience section
     [params.experience]
@@ -107,7 +107,7 @@ theme = "aafu"
             position = "Technical- Writer Intern"
             company = "AIR Worldwide"
             dates = "May 2018 - August 2018"
-            details = "Researched loss estimates from Hurricanes and the insurance cover needed by residents of Florida. Developed technical manuals that explained how proprietary risk analysis software worked.   Used ArcGIS to map catastrophes in Europe, America and Southeast Asia State. "
+            details = "Researched loss estimates from Hurricanes and the insurance cover needed by residents of Florida. Developed technical manuals that explained how proprietary risk analysis software worked.   Used ArcGIS to map catastrophes in Europe, America and Southeast Asia. "
         [[params.experience.list]]
             position = "Enterprise Demand Management Intern"
             dates = "June 2017 - August 2017"
